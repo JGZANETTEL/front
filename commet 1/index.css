@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+html{
+    height: 500vh;
+    background-color: wheat;
+}
+
+.conteiner{
+    max-width: 1280px;
+    margin: auto;
+
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header{
+    width: 100%;
+    padding: 64px 4%;
+ /* isso é para deixar tensparente a parte do header para a foto ocupar */
+ position: fixed;
+ top: 0;
+ left: 0;
+transition: .5s;
+}
+/* chamar a classe do js que foi criada(nao pode ter espaço entre as teg) */
+header.rolagem{
+    background-color: #fff;
+    padding: 20px 4%; /*diminui o topo */ 
+}
+
+/*colocando na descida o resto das coisas */
+header.rolagem a, header.rolagem i {
+    color:rgb(14, 61, 38);
+}
+
+
+
+header i{
+    font-size: 30px;
+    color: rgb(0, 255, 132);
+    text-decoration: none;
+    
+}
+
+
+header ul{
+    list-style-type: none;
+
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0px 40px;
+}
+header ul li a {
+    color: rgb(0, 255, 132);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*estilo botão*/
+.btn-contato button{
+    width: 120px;
+    height: 40px;
+    border: 0;
+    background-color: burlywood;
+    
+    cursor: pointer;
+    transition: .2s;
+
+}
+
+
+
+
+
+
+
+/* imgagem*/
+.banner{
+    height: 100vh;
+background-image: url(cafe.jfif);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+/*isso aqui em baixo deixa o bem vidndo no meio da tela */
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+/*faz a mudança de cor do bem vindo */
+.banner h1{
+    font-size: 6em;
+    
+}
+.banner h1 span{
+    color:brown
+}
